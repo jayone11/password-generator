@@ -6,6 +6,7 @@ body {
     padding: 25px 15px;
     background-color: #fff;
     box-shadow: 5px 10px 18px #888888;
+    z-index: 1;
 }
 
 .textArea {
@@ -23,7 +24,7 @@ button {
     border-radius: 25px;
 }
 
-button#newPassword {
+button#newPasswordBtn {
     background-color: rgb(189, 0, 0);
     color: #fff;
 }

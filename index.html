@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Password Generator</title>
+    
 </head>
 <body>
     <header>
@@ -15,26 +16,72 @@
                 <h1 class="mx-auto">Password Generator</h1>
             </div>
         </div>
-        
+                
     </header>
+        
+         <section class="container mt-5">
+            <div class="row">
 
-    <section class="container mt-5">
-        <div class="row">
-            <div class="main-content col-sm-12">
-                <h2>Generate Password</h1>
-                <hr>
-                <div class="textArea">
-                    <p class="mt-5">Your secure password...</p>
+                <div class="main-content col-sm-12">
+                    <h2>Generate Password</h1>
+                    <hr>
+                    <div class="textArea">
+                        <p id="securePassword" class="mt-5">Your secure password...</p>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <button type="button" class="float-left mt-4" id="newPasswordBtn">Generate Password</button>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <label for="password-length">Password Length: </label>
+                                <input class="mt-4" id="password-length" type="number" placeholder="0">
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-4">  
+                                <button class="float-right mt-4" id="copyPasswordBtn">Copy to Clipboard</button>  
+                            </div>
+
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="custom-control custom-switch mt-4">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1">Special Characters</label>
+                                </div>
+                           
+                                <div class="custom-control custom-switch mt-4">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                    <label class="custom-control-label" for="customSwitch1">Numeric Characters</label>
+                                </div>
+                            </div>    
+                            
+                            <div class="col-sm-6">
+                                <div class="custom-control custom-switch mt-4">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                    <label class="custom-control-label" for="customSwitch1">Lowercase Characters</label>
+                                </div>
+
+                                <div class="custom-control custom-switch mt-4">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                    <label class="custom-control-label" for="customSwitch1">Uppercase Characters</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
-                <hr>
-                <button class="float-left mt-4" id="newPassword">Generate Password</button>
-                <button class="float-right mt-4" id="copyPassword">Copy to Clipboard</button>
             </div>
-        </div>
-    </section>
+        </section>
+        
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
