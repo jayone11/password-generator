@@ -2,6 +2,14 @@ body {
     background-color: rgb(249, 251, 253);
 }
 
+input {
+    width: 100px;
+    border-radius: 25px;
+    box-shadow: 1px 3px 8px #888888;
+    padding: 10px;
+    
+}
+
 .main-content {
     padding: 25px 15px;
     background-color: #fff;
@@ -22,6 +30,7 @@ body {
 button {
     padding: 10px;
     border-radius: 25px;
+    box-shadow: 1px 3px 8px #888888;
 }
 
 button#newPasswordBtn {
