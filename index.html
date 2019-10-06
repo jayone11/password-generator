@@ -26,28 +26,29 @@
                     <h2>Generate Password</h1>
                     <hr>
                     <div class="textArea">
-                        <p id="securePassword" class="mt-5">Your secure password...</p>
+                        <!-- Output of random password  -->
+                        <textarea id="securePassword" class="mt-5">Your secure password is...</textarea>
                     </div>
                     <hr>
                     <div class="container">
                         <div class="row">
-        
+                            <!-- Generate Password Button -->
                             <div class="col-xs-12 col-sm-12 col-md-4">
-                                <button type="button" class="float-left mt-4" id="newPasswordBtn">Generate Password</button>
+                                <button type="button" class="float-left mt-4" id="newPasswordBtn" onclick="generatePassword()">Generate Password</button>
                             </div>
-
+                            <!-- Password Length Input -->
                             <div class="col-xs-12 col-sm-12 col-md-4">
                                 <label for="password-length">Password Length: </label>
                                 <input class="mt-4 ml-1" id="password-length" type="number" placeholder="0">
                             </div>
-
+                            <!-- Copy Button -->
                             <div class="col-xs-12 col-sm-12 col-md-4">  
-                                <button class="float-right mt-4" id="copyPasswordBtn">Copy to Clipboard</button>  
+                                <button class="float-right mt-4" id="copyPasswordBtn" onclick="copyPassword()">Copy to Clipboard</button>  
                             </div>
 
                         </div>
                         
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-sm-6">
                                 <div class="custom-control custom-switch mt-4">
                                     <input type="checkbox" class="custom-control-input" id="customSwitch1">
@@ -72,12 +73,16 @@
                                 </div>
                             </div>
                             
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
-        
+        <!-- <script>function promptTypes() {
+                if(confirm("Pick uppercase?")) {
+                    debugger;
+                }
+            }</script> -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
